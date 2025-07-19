@@ -2,7 +2,7 @@ module.exports.config = {
   name: "prefix",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+  credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
   description: "given prefix detail",
   commandCategory: "Dành cho Admin",
   usages: "",
@@ -12,8 +12,8 @@ module.exports.config = {
 module.exports.handleEvent = async ({ event, api, Threads }) => {
   var { threadID, messageID, body } = event;
 
-  if ((this.config.credits) != "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭") {
-    return api.sendMessage("Again change credit to 𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭", threadID, messageID);
+  if ((this.config.credits) != "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️") {
+    return api.sendMessage("Again change credit to 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐈𝐬𝐥𝐚𝐦", threadID, messageID);
   }
 
   function out(data) {
@@ -36,9 +36,15 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
     if (body === i.toUpperCase() || body === i || str === body) {
       const prefix = threadSetting.PREFIX || global.config.PREFIX;
       return out(
-        `This Is My Prefix ⇉ [ ${prefix} ]\n\n` +
-        `𝐎𝐖𝐍𝐄𝐑:- ☞ 𝐅𝐚𝐫𝐡𝐚𝐝 𝐔𝐝𝐝𝐢𝐧\n` +
-        `𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐈𝐃:- https://www.facebook.com/100041336504284`
+        `╭─『 ⚙️ 𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗 𝐈𝐍𝐅𝐎 』─╮\n` +
+        `│ 🌀 Prefix: ⇉ [ ${prefix} ]\n` +
+        `│ 👑 Owner: 𝐅𝐚𝐫𝐡𝐚𝐝 𝐔𝐝𝐝𝐢𝐧\n` +
+        `│ 🌐 Facebook ID:\n` +
+        `│ https://www.facebook.com/farhad018898?\n` +
+        `│ 📞 WhatsApp: 01848019304\n` +
+        `│ 💬 Messenger:\n` +
+        `│ https://www.facebook.com/farhad018898\n` +
+        `╰──────────────────╯`
       );
     }
   });
