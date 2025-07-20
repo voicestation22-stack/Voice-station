@@ -36,15 +36,13 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
     if (body === i.toUpperCase() || body === i || str === body) {
       const prefix = threadSetting.PREFIX || global.config.PREFIX;
       return out(
-        `╭─『 ⚙️ 𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗 𝐈𝐍𝐅𝐎 』─╮\n` +
-        `│ 🌀 Prefix: ⇉ [ ${prefix} ]\n` +
-        `│ 👑 Owner: 𝐅𝐚𝐫𝐡𝐚𝐝 𝐔𝐝𝐝𝐢𝐧\n` +
-        `│ 🌐 Facebook ID:\n` +
-        `│ https://www.facebook.com/farhad018898?\n` +
-        `│ 📞 WhatsApp: 01848019304\n` +
-        `│ 💬 Messenger:\n` +
-        `│ https://www.facebook.com/farhad018898\n` +
-        `╰──────────────────╯`
+        `✦━━━━━━━━━━━━━━━━━✦『 ⚙️ 𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗 𝐈𝐍𝐅𝐎』 \n` +        `✦━━━━━━━━━━━━━━━━━✦
+🌀 Prefix: ⇉ [ ${prefix} ]\n` +   `✦━━━━━━━━━━━━━━━━━✦
+👑 Owner: 𝐅𝐚𝐫𝐡𝐚𝐝 𝐔𝐝𝐝𝐢𝐧\n` +     `✦━━━━━━━━━━━━━━━━━✦
+ 🌐 Facebook ID:\n` + `https://www.facebook.com/farhad018898?\n` +       `✦━━━━━━━━━━━━━━━━━✦
+📞 WhatsApp: 01848019304\n` +       `✦━━━━━━━━━━━━━━━━━✦
+💬 Messenger:\n` `https://www.facebook.com/farhad018898\n` +
+ `✦━━━━━━━━━━━━━━━━━✦`
       );
     }
   });
