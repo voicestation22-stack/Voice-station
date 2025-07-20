@@ -22,7 +22,7 @@ handleEvent: async function ({ api, event, args }) {
 const data = await alldown(content);
  console.log(data)
  let Shaon = data.url;
- api.setMessageReaction("☢️", event.messageID, (err) => {}, true);
+ api.setMessageReaction("🍼", event.messageID, (err) => {}, true);
  const video = (await axios.get(Shaon, {
  responseType: "arraybuffer",
  })).data;
@@ -31,7 +31,7 @@ const data = await alldown(content);
  return api.sendMessage({
  body: `🔥🚀 —͟͟͞͞𝐕𝐨𝐢𝐜𝐞 𝐒𝐭𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐭 🔥💻 
 📥⚡𝗔𝘂𝘁𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿⚡📂
-🎬 𝐄𝐧𝐣𝐨𝐲 𝐭𝐡𝐞 𝐕𝐢𝐝𝐞𝐨 🎀`,
+🎬  𝗧𝗶𝘁𝗹𝗲: ${data.title || "N/A"}\n`,
  attachment: fs.createReadStream(__dirname + "/cache/auto.mp4")
 
  }, event.threadID, event.messageID);
