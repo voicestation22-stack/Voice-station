@@ -2,7 +2,7 @@ module.exports.config = {
   name: "prefix",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐈𝐬𝐥𝐚𝐦",
+  credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
   description: "given prefix detail",
   commandCategory: "Dành cho Admin",
   usages: "",
@@ -36,11 +36,7 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
     if (body === i.toUpperCase() || body === i || str === body) {
       const prefix = threadSetting.PREFIX || global.config.PREFIX;
       return out(
-        `✦━━━━━━━━━━━━━━━━━✦\n` +
-        `『 ⚙️ 𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗 𝐈𝐍𝐅𝐎 ⚙️』\n` +
-        `✦━━━━━━━━━━━━━━━━━✦\n` +
-        `🌀 Prefix: ⇉ [ ${prefix} ]\n` +
-        `✦━━━━━━━━━━━━━━━━━✦\n` +
+      `✦━━━━━━━━━━━━━━━━━✦\n` +
         `👑 Owner: 𝐅𝐚𝐫𝐡𝐚𝐝 𝐔𝐝𝐝𝐢𝐧\n` +
         `✦━━━━━━━━━━━━━━━━━✦\n` +
         `𝗕𝗼𝘁 𝗡𝗮𝗺𝗲: 𝐕𝐨𝐢𝐜𝐞 𝐒𝐭𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐭\n` +
