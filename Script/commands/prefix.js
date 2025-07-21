@@ -2,7 +2,7 @@ module.exports.config = {
   name: "prefix",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝐌_ ☢️",
+  credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
   description: "given prefix detail",
   commandCategory: "Dành cho Admin",
   usages: "",
@@ -12,8 +12,8 @@ module.exports.config = {
 module.exports.handleEvent = async ({ event, api, Threads }) => {
   var { threadID, messageID, body } = event;
 
-  if ((this.config.credits) != "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝐀𝐌_ ☢️") {
-    return api.sendMessage("Again change credit to 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐈𝐬𝐥𝐚𝐦", threadID, messageID);
+  if ((this.config.credits) != "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️") {
+    return api.sendMessage("Again change credit to —͟͟͞͞𝐕𝐨𝐢𝐜𝐞 𝐒𝐭𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐭", threadID, messageID);
   }
 
   function out(data) {
@@ -31,13 +31,27 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
     "prefx", "prfix", "prifx", "perfix", "bot not talking", "where is bot"
   ];
 
-  for (let i of arr) {
+  arr.forEach(i => {
     let str = i[0].toUpperCase() + i.slice(1);
     if (body === i.toUpperCase() || body === i || str === body) {
       const prefix = threadSetting.PREFIX || global.config.PREFIX;
-      return out(`✦━━━━━━━━━━━━━━━━━✦\n『 ⚙️ 𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗 𝐈𝐍𝐅𝐎 ⚙️』\n✦━━━━━━━━━━━━━━━━━✦\n🌀 Prefix: ⇉ [ ${prefix} ]\n✦━━━━━━━━━━━━━━━━━✦\n👑 Owner: 𝐅𝐚𝐫𝐡𝐚𝐝 𝐔𝐝𝐝𝐢𝐧\n✦━━━━━━━━━━━━━━━━━✦\n𝗕𝗼𝘁 𝗡𝗮𝗺𝗲: 𝐕𝐨𝐢𝐜𝐞 𝐒𝐭𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐭\n✦━━━━━━━━━━━━━━━━━✦\n🌐 Facebook ID: www.facebook.com/100041336504284\n✦━━━━━━━━━━━━━━━━━✦\n📞 WhatsApp: https://wa.me/01848019304\n✦━━━━━━━━━━━━━━━━━✦\n📩 Messenger: m.me/100041336504284\n✦━━━━━━━━━━━━━━━━━✦`);
+      return out(
+        `✦━━━━━━━━━━━━━━━━━✦\n` +
+        `🌀 Prefix: ⇉ [ ${prefix} ]\n` +
+        `✦━━━━━━━━━━━━━━━━━✦\n` +
+        `👑 Owner: 𝐅𝐚𝐫𝐡𝐚𝐝 𝐔𝐝𝐝𝐢𝐧\n` +
+        `✦━━━━━━━━━━━━━━━━━✦\n` +
+        `𝗕𝗼𝘁 𝗡𝗮𝗺𝗲: 𝐕𝐨𝐢𝐜𝐞 𝐒𝐭𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐭\n` +
+        `✦━━━━━━━━━━━━━━━━━✦\n` +
+        `🌐 Facebook ID: www.facebook.com/100041336504284\n` +
+        `✦━━━━━━━━━━━━━━━━━✦\n` +
+        `📞 WhatsApp: https://wa.me/01848019304\n` +
+        `✦━━━━━━━━━━━━━━━━━✦\n` +
+        `Messenger: m.me/100041336504284\n` +
+        `✦━━━━━━━━━━━━━━━━━✦`
+      );
     }
-  }
+  });
 };
 
 module.exports.run = async ({ event, api }) => {
