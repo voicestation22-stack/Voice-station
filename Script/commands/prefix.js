@@ -1,4 +1,4 @@
-module.exports.config = {
+ module.exports.config = {
   name: "prefix",
   version: "1.0.0",
   hasPermssion: 0,
@@ -12,7 +12,7 @@ module.exports.config = {
 module.exports.handleEvent = async ({ event, api, Threads }) => {
   var { threadID, messageID, body } = event;
 
-  if ((this.config.credits) != "—͟͟͞͞𝐕𝐨𝐢𝐜𝐞 𝐒𝐭𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐭") {
+  if ((this.config.credits) != "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️") {
     return api.sendMessage("Again change credit to —͟͟͞͞𝐕𝐨𝐢𝐜𝐞 𝐒𝐭𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐭", threadID, messageID);
   }
 
